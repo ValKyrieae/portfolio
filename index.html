@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- This is my own work!!! -->
+<html lang="en">
+    <head>
+        <!-- linking my custom style sheet (I might use this later instead of embedding all CSS here) -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- pulling in fonts from Google so it doesn’t look basic -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- making sure my site works well on all devices -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- this is what shows up in the browser tab -->
+        <title>Kyrie's Portfolio</title>
+    </head>
+    <body>
+
+        <!-- fun popup when you first land on the page -->
+        <div id="popup">
+            <div class="popup-content">
+                <h2>Are you human?</h2>
+                <p>Welcome! Would you like to view my portfolio?</p>
+                <button onclick="closePopup()">Yes, show me!</button>
+            </div>
+        </div>
+
+        <!-- nav and header area -->
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>MY PORT<span style="font-style: italic; font-weight: 400;">folio</span></h1>
+            <p>Cybersecurity • Digital Forensics • Cloud Fundamentals?</p> <!-- need to think about what I want to focus on -->
+        </header>
+
+        <main>
+
+            <!-- where I show my headshot, with a cool glow effect -->
+            <section class="headshot-section">
+                <div class="headshot-wrapper">
+                    <img src="headshot.png" alt="Kyrie Logins headshot" class="headshot">
+                </div>
+            </section>
+
+            <!-- basic About Me intro -->
+            <section id="intro">
+                <h2>About Me</h2>
+                <p>Hi, I'm Kyrie! I'm a U.S. Air Force veteran, an upcoming college graduate, and a lifelong technology enthusiast. My passion for tech started early with video games and a fascination for how systems work — a curiosity that eventually led me to build my own custom PC and dive deeper into cybersecurity, software, and hardware.</p>
+
+                <p>Through my academic and professional journey, I've developed skills in cybersecurity, network traffic analysis, incident response, and cloud technologies like Amazon Web Services (AWS) and Microsoft Azure. I'm Security+ certified and trained with tools like WireShark, Autopsy, and Cisco Packet Tracer, and I've built a strong foundation working with Linux and Windows server environments.</p>
+
+                <p>While serving in the Air Force, I was proud to be recognized as an Honor Graduate from Airman Leadership School and awarded the Air Force Commendation Medal for outstanding service and leadership. These experiences shaped my commitment to teamwork, attention to detail, and always striving for excellence — traits I now carry into every project I work on.</p>
+
+                <p>I'm passionate about solving problems, learning new technologies, and making systems more efficient and secure. Thanks for visiting my portfolio — I’m excited to keep growing and contributing to the ever-evolving world of technology.</p>
+            </section>
+
+
+            <!-- featured capstone project goes here -->
+            <section class="featured-project">
+                <h2>Featured Project</h2>
+                <p><strong>Digital Forensics Capstone:</strong> Investigated a write-protected SSD using Autopsy, Wireshark, and Bash scripting. Discovered contraband image files and traced Telnet/FTP account misuse. View details on the <a href="projects.html">Projects</a> page.</p>
+            </section>
+        </main>
+
+        <!-- simple footer -->
+        <footer>
+            <p>&copy; 2025 Kyrie Logins. All rights reserved.</p>
+        </footer>
+
+        <!-- script to control the popup visibility -->
+        <script>
+            window.onload = function () {
+                // Check if popup has already been shown in this session
+                if (!sessionStorage.getItem("popupShown")) {
+                    document.getElementById("popup").style.display = "flex";
+                    sessionStorage.setItem("popupShown", "true"); // Remember that we've shown it
+                }
+            };
+
+            function closePopup() {
+                document.getElementById("popup").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>

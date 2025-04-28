@@ -1,0 +1,228 @@
+
+/* 
+    Created on : Apr 26, 2025, 9:51:26 AM
+    Author     : Kyrie
+*/
+
+/* basic body styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f3ec;
+  color: #333;
+}
+
+/* header styles */
+header {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* page title */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* navbar layout */
+nav ul.navbar {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* navbar link style */
+nav ul.navbar li a {
+  text-decoration: none;
+  color: #5c5346;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* navbar link hover */
+nav ul.navbar li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #000;
+}
+
+/* main content layout */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* section spacing */
+section {
+  margin-bottom: 2rem;
+}
+
+/* section titles */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #5c5346;
+}
+
+/* paragraph style */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* footer style */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* link default */
+a {
+  color: #5c5346;
+  text-decoration: none;
+}
+
+/* link hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* popup overlay */
+#popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* popup content */
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.popup-content button {
+  background-color: #5c5346;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #463f37;
+}
+
+/* headshot section */
+.headshot-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  position: relative;
+  background: linear-gradient(180deg, #f5f5f5 50%, #fff 100%);
+}
+
+.headshot-wrapper {
+  width: 50vw;
+  max-width: 300px;
+  height: 50vw;
+  max-height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(255, 240, 200, 0.3);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,210,0.4), transparent 70%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.headshot-wrapper:hover {
+  box-shadow: 0 0 40px rgba(255, 220, 150, 0.5);
+}
+
+.headshot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* project card */
+.project {
+  background-color: #ffffff;
+  border: 1px solid #e0dbd0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* special styling for Growth section */
+.project.growth {
+  border-left: 6px solid #d4b483;
+  background-color: #fdfbf8;
+}
+
+/* image marquee */
+.image-marquee {
+  overflow: hidden;
+  padding: 2rem 0;
+  background: #f5f3ec;
+}
+
+.image-track {
+  display: flex;
+  width: calc(250px * 10);
+  animation: scroll 30s linear infinite;
+}
+
+.image-track img {
+  width: 250px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* scrolling animation for images */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

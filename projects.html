@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- this is my own work - @author Kyrie Logins-->
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects | Kyrie Logins</title>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>My Projects</h1>
+        </header>
+
+        <main>
+            <div class="image-marquee">
+                <div class="image-track">
+                    <img src="images/project1.png" alt="Digital Forensics Capstone Screenshot">
+                    <img src="images/project2.png" alt="Early Digital Investigation Screenshot">
+                </div>
+            </div>
+
+            <!-- 1st Project: Cyber Forensics Capstone -->
+            <section class="project">
+                <h2>Digital Forensics Capstone</h2>
+                <p class="tools">Tools: Autopsy, Wireshark, Ubuntu VM, Windows VM, Bash, Stegcracker</p>
+                <p>Investigated a write-protected SSD to recover contraband Rhino image files hidden within crocodile images. Used Autopsy for file system analysis, Wireshark for network log inspection, and Bash scripting to brute-force hidden steg files. Uncovered Telnet/FTP account misuse and recovered credentials used for unauthorized access.</p>
+                <p><a href="#">View GitHub Repo</a></p>
+            </section>
+
+            <!-- 2nd Project: First Digital Investigation -->
+            <section class="project">
+                <h2>First Digital Investigation Project</h2>
+                <p class="tools">Tools: Autopsy, Wireshark, Windows VM</p>
+                <p>Conducted a beginner-level forensic analysis simulating a lost device investigation. Applied file recovery techniques, used timeline analysis to reconstruct user activity, and reported findings based on digital evidence artifacts located on the drive.</p>
+                <p><a href="#">View GitHub Repo</a></p>
+            </section>
+
+            <!-- Growth and Reflection Section -->
+            <section class="project growth">
+                <h2> Growth & Reflection</h2>
+                <p>When I started this journey, I honestly just wanted to understand how things work. I didn’t know how to script, I wasn’t confident presenting, and I definitely didn’t know what tools like Autopsy or Wireshark really did. Now, I’ve built forensic reports, presented capstone findings in a mock court setting, and configured real-world security settings as an ISSO.</p>
+                <p>Each project here represents a challenge I stepped into and figured out — sometimes the hard way — but that’s what makes it real. I’m proud of how far I’ve come and excited about where I’m heading.</p>
+                <p>If you want to talk about learning curves, troubleshooting nightmares, or nerding out over packet captures — I’m your person.</p>
+            </section>
+        </main>
+
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="index.html" style="display: inline-block; padding: 10px 20px; background-color: #d4b483; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                ← Back to Home
+            </a>
+        </div>
+    </body>
+</html>
